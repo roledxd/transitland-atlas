@@ -500,11 +500,13 @@
         },
         {
           "onestop_id": "o-ud9d-tallinnalinnatranspordias",
-          "name": "Tallinna Linnatranspordi",
+          "name": "Tallinna Linnatranspordi AS",
+          "short_name": "tlt",
           "website": "http://www.tallinnlt.ee/",
           "associated_feeds": [
             {
-              "gtfs_agency_id": "56"
+              "gtfs_agency_id": "56",
+              "feed_onestop_id": "tlt-gps"
             }
           ]
         },
@@ -619,6 +621,13 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tlt-gps",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://transport.tallinn.ee/gps.txt"
+      }
     }
   ],
   "license_spdx_identifier": "CDLA-Permissive-1.0"
